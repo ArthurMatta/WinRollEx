@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "winrollex"
+version = "0.1.0"
+description = "Simple [temporal] rolling and expanding windows for machine learning applicationsn"
+license = "MIT"
+authors = [
+  "Arthur Matta <arthur.matta@ccg.pt>",
+  "Helder Teixeira <helder.teixeira@ccg.pt>",
+]
+repository = "https://github.com/ArthurMatta/WinRollEx"
+readme = "README.md"
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/ArthurMatta/WinRollEx/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4"
+python-dateutil = "^2.9.0.post0"
+pandas = "^2.0.0"
+numpy = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
